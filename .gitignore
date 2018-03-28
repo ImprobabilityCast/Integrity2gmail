@@ -2,5 +2,5 @@
 *.o
 
 # Ignore binary files
-toCSVgmail
-toCSVgmail.exe
+Integrity2gmail
+Integrity2gmail.exe
