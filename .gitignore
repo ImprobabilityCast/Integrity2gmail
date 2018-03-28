@@ -1,0 +1,6 @@
+# Ignore obj files
+*.o
+
+# Ignore binary files
+toCSVgmail
+toCSVgmail.exe
