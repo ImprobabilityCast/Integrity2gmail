@@ -15,7 +15,7 @@ E-mail Address = E-mail 1 - Value
 void printHelp() {
 	printf("Integrity2gmail v1.0.1 March 2018\n"
 	"Converts an address book exported as a CSV file from integrity.com\n"
-	"(an obscure Internet provider) to the format expected by gmail for\n"
+	"(an obscure Internet provider) to the format expected by Gmail for\n"
     "importing address books. The output file will be called 'gmail.csv'\n\n"
 	"Usage:\ttoCSVgmail FILE\n\n"
 	"FILE:\tRequired.  The file to convert.\n\n"
