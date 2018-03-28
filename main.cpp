@@ -7,6 +7,7 @@ Last Name  = Family Name
 lable      = Notes
 E-mail Address = E-mail 1 - Value
 */
+
 #include "CSVParser.h"
 
 //#define DEBUG 1
@@ -14,22 +15,19 @@ E-mail Address = E-mail 1 - Value
 void printHelp() {
 	printf("toCSVgmail v1.0.1 March 2018\n"
 	"Converts an address book exported as a CSV file from integrity.com\n"
-	"to the format expected by gmail for importing address books.\n"
-	"The output file will be called 'gmail.csv'\n\n"
+	"(an obscure Internet provider) to the format expected by gmail for\n"
+    "importing address books. The output file will be called 'gmail.csv'\n\n"
 	"Usage:\ttoCSVgmail FILE\n\n"
 	"FILE:\tRequired.  The file to convert.\n\n"
 	);
 }
 
 int main(int argc, char* argv[]) {
-	if (argc != 2) {
-		printf("Expected one argument.  Try '--help'\n");
-		return 1;
-	}
-	if (0 == strcmp(argv[1], "--help")) {
+	if (argc != 2 || 0 == strcmp(argv[1], "--help")) {
 		printHelp();
 		return 0;
 	}
+    
 	CSVParser parser;
 	const char* header = "Name,Given Name,Additional Name,Family Name,"
 		"Yomi Name,Given Name Yomi,Additional Name Yomi,"
